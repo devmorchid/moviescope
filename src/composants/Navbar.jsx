@@ -10,10 +10,9 @@ function Navbar() {
 
             <nav>
                 <ul className="nav-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/movies">Movies</a></li>
-                    <li><a href="/tvshows">TV Shows</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/Home">Home</a></li>
+                    <li><a href="/Liste">movies</a></li>
+                    <li><a href="/MovieDetail">Movie Detail</a></li>
                 </ul>
                 
             </nav>  

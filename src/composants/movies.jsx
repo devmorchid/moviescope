@@ -2,10 +2,11 @@
 import React, { useEffect, useState } from "react";
 import * as XLSX from "xlsx";
 import "./movies.css";
-import MovieDetail from "./MovieDetail";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-export default function MoviesFromExcel() {
+import {BrowserRouter, Link } from "react-router-dom";
+
+
+export default function Movie() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -23,17 +24,16 @@ export default function MoviesFromExcel() {
 
   return (
   <div className="list_mov">
-  <h2>Movies from Excel</h2>
+  <h1 className="titre_bien" >Bienvenue</h1>
   <ul  className="list_img">
     {movies.map((movie, index) => (
       <li key={index} style={{ marginBottom: "10px" }}>
-        <strong>{movie.title}</strong> ({movie.year})
+        
+        <strong className="titre_movie">{movie.title}  ({movie.year}) </strong>
         <br />
         <img className="img" src={movie.image_url} alt={movie.title} />
         <br />
-        <Router>
-          <Link to={`/MovieDetail/${movie.id}`}>View Details</Link>  
-        </Router>
+      <link rel="stylesheet" href="MovieDitail" />
       </li>
     ))}
   </ul>

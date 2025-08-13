@@ -4,6 +4,7 @@
   gap: 30px;
   padding: 20px;
   background: #f9f9f9;
+ 
 }
 
 .movie-card {
@@ -11,18 +12,21 @@
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+ 
 }
 
 .movie-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #2c3e50;
+ 
 }
 
 .movie-image {
   width: 200px;
   border-radius: 8px;
   margin-bottom: 10px;
+
 }
 
 .movie-video {
@@ -40,17 +44,21 @@
   margin-top: 10px;
   font-size: 1rem;
   color: #333;
+  
 }
 .img{
  width: 250px;
- border-radius: 20px;
+ border-radius: 15px;
  height: 300px;
+
 }
 .list_img{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-
+  justify-content: center;
+  padding: 60px;  
+ 
 
 }
 
@@ -64,6 +72,7 @@
 
    margin-top: 0px;
   padding: 20px;
+   
     
     
   }
@@ -87,6 +96,7 @@ li{
   transition: transform 0.3s ease, background-color 0.3s ease;
   text-align: center;
   list-style: none;
+  
 
 }
 /* 
@@ -98,8 +108,40 @@ li {
   width: 250px;
 
 }
-s */
+s 
 body {
 background-image: url('../assets/cinema.jpg');
 
+}*/
+
+.view-details {
+  text-decoration: none;
+  background-color: #ff6b00;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-details:hover {
+  background-color: #e65a00;
+  transform: scale(1.05);
+}
+
+.view-details:active {
+  background-color: #cc4d00;
+}
+.titre_bien {
+  text-align: center;
+  color: #314f6d;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.titre_movie {
+  font-size: 1.2rem;
+  color: #6611d6;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
