@@ -31,14 +31,18 @@ export default function MovieDetail() {
 
   return (
     <div className="movie-detail">
+      <div>
       <h1>{movie.title} ({movie.year})</h1>
       <img src={movie.image_url} alt={movie.title} className="detail-img" />
+      </div>
+      <div className="cont-text">
       <p><strong>Genre:</strong> {movie.genre}</p>
       
       <p><strong>Description:</strong> {movie.summary}</p>
       <p><strong>Runtime:</strong> {movie.runtime} min</p>
 
-      <Link to="/movies" className="back-button">← Back to Movies</Link>
+      <Link to="/" className="back-button">← Back to Movies</Link>
+      </div>
     </div>
   );
 }

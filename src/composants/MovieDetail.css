@@ -1,27 +1,68 @@
 .movie-detail {
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 40px; 
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  flex-wrap: wrap; 
 }
 
-.detail-img {
-  max-width: 100%;
+.movie-detail img.detail-img {
+  width: 320px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.movie-detail img.detail-img:hover {
+  transform: scale(1.05);
+}
+
+.cont-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.movie-detail h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.movie-detail p {
+  margin: 10px 0;
+  line-height: 1.6;
 }
 
 .back-button {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 15px;
-  background: #3498db;
+  background: #ff9800;
   color: white;
-  border-radius: 6px;
+  padding: 10px 20px;
+  border-radius: 30px;
   text-decoration: none;
-  transition: 0.3s;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .back-button:hover {
-  background: #2980b9;
+  background: #e68900;
+}
+
+
+@media (max-width: 768px) {
+  .movie-detail {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cont-text {
+    text-align: center;
+  }
 }

@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="liste">
      <Swiper
   effect={'coverflow'}
   grabCursor={true}
@@ -42,7 +42,7 @@ export default function Home() {
     slideShadows: true,
   }}
   pagination={{ clickable: true }}
-  autoplay={{ delay: 2000, disableOnInteraction: false }} // كل 1 ثانية
+  autoplay={{ delay: 2000, disableOnInteraction: false }} 
   modules={[EffectCoverflow, Pagination, Autoplay]}
   className="mySwiper"
 >
@@ -59,6 +59,6 @@ export default function Home() {
         
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }

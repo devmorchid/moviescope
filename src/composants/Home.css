@@ -37,3 +37,17 @@ body {
   display: block;
   width: 100%;
 }
+.liste{
+    color: #fff;
+    text-align: center;
+   color: #fff;
+
+}
+.slide-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+} 
+.titre_movie{
+  color: #fff !important;
+}

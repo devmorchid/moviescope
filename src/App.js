@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './composants/Home';
 import Liste from './composants/Liste';
 import "font-awesome/css/font-awesome.min.css";
+import Footer from './composants/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       
       </Routes>
     </BrowserRouter>
+    <Footer />
     </div>
   );
 }
