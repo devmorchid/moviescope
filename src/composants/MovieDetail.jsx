@@ -34,8 +34,8 @@ export default function MovieDetail() {
       <h1>{movie.title} ({movie.year})</h1>
       <img src={movie.image_url} alt={movie.title} className="detail-img" />
       <p><strong>Genre:</strong> {movie.genre}</p>
-      <p><strong>Director:</strong> {movie.director}</p>
-      <p><strong>Description:</strong> {movie.description}</p>
+      
+      <p><strong>Description:</strong> {movie.summary}</p>
       <p><strong>Runtime:</strong> {movie.runtime} min</p>
 
       <Link to="/movies" className="back-button">← Back to Movies</Link>

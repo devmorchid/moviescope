@@ -1,27 +1,30 @@
-import React from 'react';
-import './Navbar.css';
+import React, { useState } from "react";
+import "./Navbar.css"; // On met le CSS à part
+
 function Navbar() {
-    return ( 
-        <div className="Navbar">
-            <div className="logo">
-                <img src="/logo192.png" className="" alt="logo" />
+  const [isResponsive, setIsResponsive] = useState(false);
+
+  const toggleMenu = () => {
+    setIsResponsive(!isResponsive);
+  };
+
+  return (
+    <div className={isResponsive ? "topnav responsive" : "topnav"}>
+        <div className="logo">
+                <img src="/logo.png" className="" alt="logo" />
                 <h1>MovieScope</h1>
             </div>
-
-            <nav>
-                <ul className="nav-links">
-                    <li><a href="/Home">Home</a></li>
-                    <li><a href="/Liste">movies</a></li>
-                    <li><a href="/MovieDetail">Movie Detail</a></li>
-                </ul>
-                
-            </nav>  
-
-
-            
-                     
-        </div>
-    );
+      <a href="/" className="active">
+        Home
+      </a>
+      <a href="/Liste">Movies</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#" className="icon" onClick={(e) => { e.preventDefault(); toggleMenu(); }}>
+        <i className="fa fa-bars"></i>
+      </a>
+    </div>
+  );
 }
 
 export default Navbar;

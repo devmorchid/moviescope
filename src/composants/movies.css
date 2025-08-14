@@ -55,9 +55,10 @@
 .list_img{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
-  padding: 60px;  
+padding: 0px 60px 0px 60px;
+
  
 
 }
@@ -132,12 +133,19 @@ background-image: url('../assets/cinema.jpg');
 .view-details:active {
   background-color: #cc4d00;
 }
-.titre_bien {
+.list_mov h1, h2 {
   text-align: center;
-  color: #314f6d;
-  font-size: 2rem;
+  color: #e5e8eb;
+  font-size: 4rem;
   margin-bottom: 20px;
   font-weight: bold;
+  margin-top: 0px;
+
+}
+.list_mov h2 {
+  font-size: 2rem;
+  color: #d1d5db;
+  margin-bottom: 40px;
 }
 .titre_movie {
   font-size: 1.2rem;

@@ -22,7 +22,8 @@ export default function Movie() {
 
   return (
     <div className="list_mov">
-      <h1 className="titre_bien">Bienvenue</h1>
+      <h1 >Découvrez nos films</h1>
+      <h2 >40 films disponibles dans notre collection</h2>
       <ul className="list_img">
         {movies.map((movie, index) => (
           <li key={index} style={{ marginBottom: "10px" }}>
@@ -32,7 +33,7 @@ export default function Movie() {
             <br />
             <img className="img" src={movie.image_url} alt={movie.title} />
             <br />
-            {/* رابط تفاصيل الفيلم */}
+            
             <Link to={`/MovieDetail/${movie.id}`} className="view-details">
               View Details
             </Link>

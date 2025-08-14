@@ -1,4 +1,4 @@
-.Navbar{
+/*.Navbar{
   
     display: flex;
     justify-content: space-between;
@@ -53,4 +53,96 @@
         gap: 20px;
        
     }
+}
+
+*/
+
+
+/* ======= NAVBAR ======= */
+.topnav {
+  overflow: hidden;
+   background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.topnav a {
+  display: block;
+  color: #5a1fcf;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 15px;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+/* ======= LOGO ======= */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto; 
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  margin-right: 8px;
+}
+
+.logo h1 {
+  font-size: 15px;
+  color: #5a1fcf;
+  margin: 0;
+}
+
+/* ======= Responsive ======= */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+
+  .topnav.responsive .logo {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }

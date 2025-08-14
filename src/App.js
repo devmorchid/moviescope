@@ -3,8 +3,9 @@ import Navbar from './composants/Navbar';
 
 import MovieDetail from './composants/MovieDetail';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home';
+import Home from './composants/Home';
 import Liste from './composants/Liste';
+import "font-awesome/css/font-awesome.min.css";
 
 function App() {
   return (
