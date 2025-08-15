@@ -27,7 +27,7 @@ export default function Movie() {
       <ul className="list_img">
         {movies.map((movie, index) => (
           <li key={index} style={{ marginBottom: "10px" }}>
-            <strong className="titre_movie">
+            <strong className="titMovie">
               {movie.title} ({movie.year})
             </strong>
             <br />

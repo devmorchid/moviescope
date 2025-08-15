@@ -147,9 +147,9 @@ background-image: url('../assets/cinema.jpg');
   color: #d1d5db;
   margin-bottom: 40px;
 }
-.titre_movie {
+.titMovie {
   font-size: 1.2rem;
-  color: #6611d6;
+  color: #050505 ;
   font-weight: bold;
   margin-bottom: 10px;
 }
