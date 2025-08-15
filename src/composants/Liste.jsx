@@ -31,6 +31,8 @@ export default function Movie() {
               {movie.title} ({movie.year})
             </strong>
             <br />
+            <span className="genre">Genre: </span>
+            <br />
             <img className="img" src={movie.image_url} alt={movie.title} />
             <br />
             
